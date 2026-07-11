@@ -19,7 +19,7 @@ export default function Profile({ user, onLogout }: { user: any | null; onLogout
     name: storedUser?.name || 'Zamato User',
     email: storedUser?.email || 'No email added',
     phone: storedUser?.mobile || 'No mobile added',
-    image: storedUser?.image ? `http://localhost:8001${storedUser.image}` : '',
+    image: storedUser?.image ? `https://zamato-production.up.railway.app${storedUser.image}` : '',
     addresses: [
       {
         id: 1,

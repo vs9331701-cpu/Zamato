@@ -27,7 +27,7 @@ function Signup({ onAuth }: SignupProps) {
      }
 
    try {
-     const response = await fetch('http://localhost:8001/api/users/signup', {
+     const response = await fetch('https://zamato-production.up.railway.app/api/users/signup', {
          method: 'POST',
          body: formData,
      });

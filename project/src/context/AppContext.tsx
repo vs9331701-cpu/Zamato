@@ -410,7 +410,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
   const [orders, setOrders] = useState<Order[]>(sampleOrders);
   const [currentRestaurant, setCurrentRestaurant] = useState<Restaurant | null>(null);
 
-  const API_URL = 'http://localhost:8001/api';
+  const API_URL = 'https://zamato-production.up.railway.app/api';
 
   const addToCart = (item: MenuItem, restaurantId: string, restaurantName: string) => {
     setCart((prev) => {

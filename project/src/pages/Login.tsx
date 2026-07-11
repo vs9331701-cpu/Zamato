@@ -14,7 +14,7 @@ function Login({ onAuth }: { onAuth: (user: any, token: string) => void }) {
          password,
      };
      try {
-       const response = await fetch('http://localhost:8001/api/users/login', {
+       const response = await fetch('https://zamato-production.up.railway.app/api/users/login', {
            method: 'POST',
            headers: {
                'Content-Type': 'application/json',
